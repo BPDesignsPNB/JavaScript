@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    background-image: url('/img/notebook.png');
+    background-size: cover;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 3em;
+    color: #F5E0B7;
+    text-align: center;
+    text-shadow: 2px 2px rgba(245, 224, 183, 0.433);
+}
+
+#add-task {
+    background-color: #D6BA73;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+    border: none;
+    padding: 0.3em;
+    border-radius: 15px;
+}
+
+input::placeholder {
+    color: #59344f;
+    font-family: 'Montserrat';
+    opacity: 0.8;
+    font-size: 0.7em;
+}
+
+a {
+    color: #59344f;
+}
+
+.add-task,
+.tasks-container {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 1em auto;
+}
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    background-color: rgba(245, 224, 183, 0.433);
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.task:hover {
+    background: hsla(60, 100%, 50%, .2);
+}
+
+.task__remove-button {
+    margin-left: auto;
+    margin-right: .1em;
+    text-decoration: none;
+    display: inline-block;
+    background: tomato;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 1rem;
+    font-size: .8em;
+    width: 1rem;
+    text-align: center;
+    height: 1rem;
+    opacity: .6;
+}
+
+.task__complete-button {
+    background: tomato;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.complete{
+    order: 10;
+    opacity: .6;
+}
+
+.complete .task__name{
+    text-decoration: line-through;
+    font-style: italic;
+}

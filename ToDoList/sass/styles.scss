@@ -1,0 +1,17 @@
+$green1: #8BBF9F;
+
+body{
+    box-sizing: border-box;
+
+    footer{
+        background-color: $green1;
+        small{
+            color: #857E7B;
+            float: left;
+        }
+        img{
+            size: 20px;
+            float: right;
+        }
+    }
+}
